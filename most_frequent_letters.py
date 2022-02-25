@@ -1,7 +1,8 @@
-def most_frequent():
-    str = input('Please enter a string :')
+def frequency():
+    str = input('Enter a string :')
     di = dict()
-    for x in str:
+    con = str.lower()
+    for x in con:
         if x not in di :
             di[x] = 1 
         else :
@@ -9,4 +10,4 @@ def most_frequent():
     for x in di:
         print(x,'=',di[x])
 
-most_frequent()
+frequency()
