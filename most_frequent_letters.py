@@ -7,10 +7,10 @@ def frequency():
             di[x] = 1 
         else :
             di[x]+=1
-    d1 =sorted(di.values(), reverse = True)
-    i=0
-    for x in di :
-        print(x ,'=',d1[i])
-        i+=1
     
+    d1 =sorted(di.items(),key = lambda item:item[1] ,reverse = True)
+    
+    for x in d1 :
+        print(f"{x[0]} = 0{x[1]}")
+   
 frequency()
